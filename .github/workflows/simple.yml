@@ -1,7 +1,7 @@
 name: Shell Commands # Name of workflow
 
 
-on: [pull_request] # Event or trigger
+on: [push] # Event or trigger
 
 jobs:
   run-shell-command: # Cannot have spaces in the name
