@@ -1,0 +1,30 @@
+name: Ali
+age: 28
+address: "Logan, UT"
+key: 
+  key: value
+  value2: 33
+  key 3: 
+      key: value
+      key2: value
+jsonObject: { key: value, key2: 33, key3: { key: value, key2: value } }
+array:
+  - item1
+  - item2
+  - { key: value }
+jsonArray: [item1, item2, objectArray: [ key1: value, key2: { key1: 33 } ] ]  
+
+objectArray:
+    - key1: value
+      key2: 33
+    - key: value  
+
+longText1: >
+  sagfadgasdfhgadfg adfhsdghdg sdfhsfgh
+  shfdshgdh shsdfgh sdfhsdfgh
+
+longText2: |
+  sgdsdhgfdsh
+  sdhsdfhsdfhgd
+  shgfdhsgfh
+  shgfsfghfghs      

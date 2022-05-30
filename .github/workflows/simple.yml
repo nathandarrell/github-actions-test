@@ -1,0 +1,31 @@
+name: Shell Commands # Name of workflow
+
+
+on: [pull_request] # Event or trigger
+
+jobs:
+  run-shell-command: # Cannot have spaces in the name
+    runs-on: ubuntu-latest
+    steps: 
+      - name: echo a string
+        run: echo "Hello World"
+        timeout-minutes: 0
+      - name: multiline script 
+        run: |
+           node -v 
+           npm -v
+      - name: python Command 
+        run: |
+          import platform 
+          print
+          (platform.processor())
+        shell: python
+  run-windwos-commands:
+    runs-on: windows-latest
+    needs: ["run-shell-command"]
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location 
+      - name: Directory Bash 
+        run: pwd 
+        shell: bash 
